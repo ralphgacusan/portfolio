@@ -1,0 +1,39 @@
+.contact__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+}
+
+.contact__copy {
+  font-size: 15.5px;
+  line-height: 1.7;
+  color: var(--muted);
+  max-width: 44ch;
+  margin: 20px 0 28px;
+}
+
+.contact__social {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.contact__social a {
+  font-size: 14px;
+  border-bottom: 1px solid var(--line-strong);
+  padding-bottom: 2px;
+  transition: border-color 0.25s var(--ease);
+}
+
+.contact__social a:hover {
+  border-color: var(--ink);
+}
+
+@media (max-width: 860px) {
+  .contact__inner {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}

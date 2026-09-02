@@ -1,0 +1,128 @@
+.hero {
+  align-items: center;
+}
+
+.hero__inner {
+  display: flex;
+  justify-content: center;
+}
+
+.hero__content {
+  max-width: 660px;
+  animation: heroIn 0.9s var(--ease) both;
+}
+
+@keyframes heroIn {
+  from { opacity: 0; transform: translateY(22px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.hero__eyebrow {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--muted);
+  margin-bottom: 22px;
+}
+
+.hero__headline {
+  font-size: clamp(38px, 6vw, 64px);
+  margin-bottom: 20px;
+}
+
+.hero__subhead {
+  font-size: 17px;
+  line-height: 1.6;
+  color: var(--muted);
+  max-width: 480px;
+  margin-bottom: 36px;
+}
+
+.hero__terminal {
+  border: 1px solid var(--line-strong);
+  border-radius: 3px;
+  background: var(--ink);
+  color: var(--paper);
+  font-family: var(--font-mono);
+  font-size: 13px;
+  max-width: 460px;
+  margin-bottom: 40px;
+  overflow: hidden;
+}
+
+.hero__terminal-bar {
+  display: flex;
+  gap: 6px;
+  padding: 10px 14px;
+  border-bottom: 1px solid rgba(251, 251, 250, 0.14);
+}
+
+.hero__terminal-bar span {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(251, 251, 250, 0.3);
+}
+
+.hero__terminal-body {
+  padding: 16px;
+}
+
+.hero__terminal-body p {
+  margin-bottom: 6px;
+}
+
+.hero__prompt {
+  color: rgba(251, 251, 250, 0.5);
+  margin-right: 4px;
+}
+
+.hero__terminal-output {
+  color: rgba(251, 251, 250, 0.65);
+}
+
+.hero__actions {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.hero__scroll-cue {
+  position: absolute;
+  bottom: 36px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--muted);
+}
+
+.hero__scroll-line {
+  width: 1px;
+  height: 30px;
+  background: var(--line-strong);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero__scroll-line::after {
+  content: "";
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--ink);
+  animation: scrollLine 1.8s var(--ease) infinite;
+}
+
+@keyframes scrollLine {
+  to { top: 100%; }
+}
+
+@media (max-width: 640px) {
+  .hero__scroll-cue { display: none; }
+}

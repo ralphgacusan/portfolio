@@ -1,0 +1,38 @@
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.project-grid__empty {
+  color: var(--muted);
+  font-size: 15px;
+}
+
+@media (max-width: 640px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.featured-projects__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 24px;
+  margin-bottom: 44px;
+}
+
+.featured-projects__all {
+  flex-shrink: 0;
+  padding: 11px 20px;
+  font-size: 13.5px;
+}
+
+@media (max-width: 640px) {
+  .featured-projects__head {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+}
