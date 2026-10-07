@@ -20,6 +20,7 @@ export const skillGroups = [
     items: [
       { name: "FastAPI", icon: "fastapi" },
       { name: "Laravel", icon: "laravel" },
+      { name: "React", icon: "react" },
       { name: "Bootstrap", icon: "bootstrap" },
       { name: "Tailwind CSS", icon: "tailwindcss" },
       { name: "daisyUI", icon: "daisyui" },
@@ -35,7 +36,7 @@ export const skillGroups = [
     ],
   },
   {
-    category: "Tools & Environments",
+    category: "Development Tools & Environments",
     items: [
       { name: "VS Code", icon: "vscode" },
       { name: "Eclipse", icon: "eclipse" },
@@ -45,10 +46,11 @@ export const skillGroups = [
       { name: "Postman", icon: "postman" },
       { name: "Render", icon: "render" },
       { name: "RStudio", icon: "rstudio" },
+      { name: "SAP", icon: "sap" },
     ],
   },
   {
-    category: "Data Analysis",
+    category: "Data Analysis Tools",
     items: [
       { name: "Excel", icon: "excel" },
       { name: "WEKA", icon: "weka" },

@@ -71,7 +71,7 @@ export const projects = [
     challenges: ["Handling role-based permissions cleanly across admin, staff, and customer-facing views"],
     solutions: ["Implemented RBAC at the route and policy level so permission logic stayed out of the views"],
     github: "https://github.com/ralphgacusan/timplato",
-    demo: "",
+    demo: "https://timplato-djia.onrender.com/",
     year: "2025",
     featured: true,
   },
