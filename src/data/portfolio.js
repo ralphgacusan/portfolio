@@ -23,6 +23,7 @@ export const profile = {
 
 export const socialLinks = [
   { label: "GitHub", href: "https://github.com/ralphgacusan", icon: "github" },
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/ralph-jayrell-gacusan/", icon: "linkedin" },
   { label: "Email", href: "mailto:ralphjayrell.e.gacusan@gmail.com", icon: "mail" },
 ];
 

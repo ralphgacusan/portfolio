@@ -1,8 +1,8 @@
 /* ---------- Full-screen sections ---------- */
 .section--screen {
-  min-height: 100vh;
-  display: flex;
+  /* the global .section already gives min-height: 100svh and vertical centering */
   flex-direction: column;
+  align-items: stretch;
   justify-content: center;
 }
 

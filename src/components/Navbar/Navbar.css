@@ -38,12 +38,12 @@
 
 .navbar__links {
   display: flex;
-  gap: 28px;
+  gap: 20px; /* was 28px */
 }
 
 .navbar__link {
   position: relative;
-  font-size: 14.5px;
+  font-size: 13.5px; /* was 14.5px */
   color: var(--muted);
   padding: 6px 0;
   transition: color 0.25s var(--ease);
@@ -119,7 +119,7 @@
 }
 
 .navbar__mobile.is-open {
-  max-height: 400px;
+  max-height: 600px; /* was 400px */
 }
 
 .navbar__mobile a {
@@ -128,7 +128,7 @@
   font-size: 15px;
 }
 
-@media (max-width: 860px) {
+@media (max-width: 1100px) {
   .navbar__links,
   .navbar__cta {
     display: none;

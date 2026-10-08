@@ -6,7 +6,7 @@
   --paper-dim: #f1f0ee;
   --line: rgba(14, 14, 14, 0.12);
   --line-strong: rgba(14, 14, 14, 0.28);
-  --muted: rgba(14, 14, 14, 0.56);
+  --muted: rgba(14, 14, 14, 0.696);
 
   --font-display: 'Space Grotesk', sans-serif;
   --font-body: 'Inter', sans-serif;
@@ -141,3 +141,4 @@ img { max-width: 100%; display: block; }
   opacity: 1;
   transform: translateY(0);
 }
+

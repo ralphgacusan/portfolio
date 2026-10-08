@@ -12,8 +12,15 @@ export default function Contact() {
         <div className="contact__intro">
           <p className="section-label">~/contact</p>
           <h2 className="section-heading">Let's work together.</h2>
-          <p className="contact__copy">{profile.availability}. The fastest way to reach me is the form, or directly at {profile.email}{profile.phone ? ` / ${profile.phone}` : ""}.</p>
-
+          <p className="contact__copy">
+            {profile.availability}. The fastest way to reach me is the form, or directly at {profile.email} /
+            {profile.phone ? (
+              <>
+                <br />
+                {profile.phone}
+              </>
+            ) : ""}
+          </p>
           <ul className="contact__social">
             {socialLinks.map((link) => (
               <li key={link.label}>

@@ -9,8 +9,14 @@ const NAV_LINKS = [
   { label: "Skills", id: "skills" },
   { label: "Projects", id: "projects" },
   { label: "Experience", id: "experience" },
+  { label: "Education", id: "education" },
+  { label: "Achievements", id: "achievements" },
+  { label: "Certifications", id: "certifications" },
   { label: "Contact", id: "contact" },
 ];
+
+// defined once, outside the component, so it's the same array every render
+const NAV_IDS = NAV_LINKS.map((l) => l.id);
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);

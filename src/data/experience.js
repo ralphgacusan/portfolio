@@ -49,7 +49,7 @@ export const certifications = [
     name: "CompTIA IT Fundamentals (ITF+)",
     date: "January 24, 2024",
     badge: "/badges/comptia-itf.png",
-    verifyUrl: "https://www.credly.com/badges/your-badge-id",
+    verifyUrl: "",
   },
   {
     name: "Test of Practical Competency in IT (Competent Level)",
